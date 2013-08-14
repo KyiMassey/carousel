@@ -1,31 +1,84 @@
+
 <!DOCTYPE html>
 
 <html>
 
-<head>
+	<head>
 
-  <link rel="stylesheet" type="text/css" href="bootstrap.css">
-  
-  <link rel="stylesheet" type="text/css" href="style.css">
+		<title>Twitter Bootstrap Carousel</title>
 
-</head>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		
+		<script src="jquery-2.0.3.js"></script>
 
-<body>
+		<script src="bootstrap.js"></script>
 
- <div align="center" class="container">
+	</head>
 
-  <div class="navbar">
+	<body>
 
-   <div class="navbar-inner">
+	    <div class="container">
+		
+		<div class="navbar">
+		
+			<div class="navbar-inner">
+		
+				<a class="brand" href="http://getbootstrap.com/2.3.2/javascript.html#carousel">Twitter Bootstrap Carousel</a>
 
-    <ul class="nav">
-    
-    <a class="brand" href="http://getbootstrap.com/2.3.2/javascript.html#carousel">King Kyi Carousel</a>
+			</div>
 
- </div>
+		</div>
 
- </div>
+		<div id="myCarousel" class="carousel slide">
 
-</body>
+			<div class="carousel-inner">
+
+				<div class="item active">
+
+					<img src="code.jpg">
+
+				</div>
+
+				<div class="item">
+
+					<img src="4.jpg">
+
+				</div>
+
+				<div class="item">
+
+					<img src="kyi.jpg">
+
+				</div>
+				
+				<div class="item">
+
+					<img src="theguys.jpg">
+
+				</div>
+				
+				<div class="item">
+
+					<img src="bro.jpg">
+
+				</div>
+
+			</div>
+
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+
+				<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
+		</div>
+
+		<script>
+			$(document).ready(function(){
+				$('.carousel').carousel();
+			});
+		</script>
+		
+	  </div>
+
+	</body>
 
 </html>
